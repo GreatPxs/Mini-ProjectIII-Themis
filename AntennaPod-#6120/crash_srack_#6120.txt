@@ -1,1 +1,55 @@
-
+2023-12-22 22:07:09.782 21783-23105 ExoPlayerImplInternal   de.danoeh.antennapod.debug           E  Playback error
+                                                                                                      com.google.android.exoplayer2.ExoPlaybackException: Source error
+                                                                                                          at com.google.android.exoplayer2.ExoPlayerImplInternal.handleMessage(ExoPlayerImplInternal.java:580)
+                                                                                                          at android.os.Handler.dispatchMessage(Handler.java:102)
+                                                                                                          at android.os.Looper.loopOnce(Looper.java:240)
+                                                                                                          at android.os.Looper.loop(Looper.java:351)
+                                                                                                          at android.os.HandlerThread.run(HandlerThread.java:67)
+                                                                                                      Caused by: com.google.android.exoplayer2.upstream.HttpDataSource$HttpDataSourceException: Unable to connect
+                                                                                                          at com.google.android.exoplayer2.ext.okhttp.OkHttpDataSource.open(OkHttpDataSource.java:296)
+                                                                                                          at com.google.android.exoplayer2.upstream.DefaultDataSource.open(DefaultDataSource.java:201)
+                                                                                                          at com.google.android.exoplayer2.upstream.StatsDataSource.open(StatsDataSource.java:84)
+                                                                                                          at com.google.android.exoplayer2.source.ProgressiveMediaPeriod$ExtractingLoadable.load(ProgressiveMediaPeriod.java:1016)
+                                                                                                          at com.google.android.exoplayer2.upstream.Loader$LoadTask.run(Loader.java:417)
+                                                                                                          at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+                                                                                                          at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+                                                                                                          at java.lang.Thread.run(Thread.java:1012)
+                                                                                                      Caused by: java.net.SocketTimeoutException: failed to connect to traffic.omny.fm/31.13.95.38 (port 443) from /192.168.31.85 (port 47010) after 10000ms
+                                                                                                          at libcore.io.IoBridge.connectErrno(IoBridge.java:235)
+                                                                                                          at libcore.io.IoBridge.connect(IoBridge.java:179)
+                                                                                                          at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:142)
+                                                                                                          at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+                                                                                                          at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:230)
+                                                                                                          at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+                                                                                                          at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+                                                                                                          at java.net.Socket.connect(Socket.java:646)
+                                                                                                          at okhttp3.internal.platform.AndroidPlatform.connectSocket(AndroidPlatform.java:73)
+                                                                                                          at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
+                                                                                                          at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:167)
+                                                                                                          at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:258)
+                                                                                                          at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+                                                                                                          at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+                                                                                                          at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+                                                                                                          at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+                                                                                                          at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+                                                                                                          at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+                                                                                                          at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+                                                                                                          at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+                                                                                                          at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+                                                                                                          at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+                                                                                                          at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:127)
+                                                                                                          at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+                                                                                                          at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+                                                                                                          at de.danoeh.antennapod.core.service.BasicAuthorizationInterceptor.intercept(BasicAuthorizationInterceptor.java:27)
+                                                                                                          at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+                                                                                                          at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+                                                                                                          at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:257)
+                                                                                                          at okhttp3.RealCall.execute(RealCall.java:93)
+2023-12-22 22:07:09.783 21783-23105 ExoPlayerImplInternal   de.danoeh.antennapod.debug           E        at com.google.android.exoplayer2.ext.okhttp.OkHttpDataSource.open(OkHttpDataSource.java:286)
+                                                                                                          ... 7 more
+2023-12-22 22:07:09.812 21783-21783 oplus.andr...actoryImpl de.danoeh.antennapod.debug           I  get feature:IOplusDynamicVsyncFeature
+2023-12-22 22:07:09.812 21783-21783 oplus.andr...actoryImpl de.danoeh.antennapod.debug           I  get feature:IOplusDynamicVsyncFeature
+2023-12-22 22:07:09.812 21783-21783 oplus.andr...actoryImpl de.danoeh.antennapod.debug           I  get feature:IOplusDynamicVsyncFeature
+2023-12-22 22:07:09.819 21783-21783 oplus.andr...actoryImpl de.danoeh.antennapod.debug           I  get feature:IOplusDynamicVsyncFeature
+2023-12-22 22:07:09.819 21783-21783 oplus.andr...actoryImpl de.danoeh.antennapod.debug           I  get feature:IOplusDynamicVsyncFeature
+2023-12-22 22:07:09.819 21783-21783 oplus.andr...actoryImpl de.danoeh.antennapod.debug           I  get feature:IOplusDynamicVsyncFeature
