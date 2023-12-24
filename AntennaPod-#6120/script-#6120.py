@@ -1,4 +1,6 @@
 # bug reproduction script for bug #285 of ActivityDiary
+#6120号bug的脚本运行不太顺利，可能与bug复现为概率问题有关，需要添加并播放含有连续章节的剧集，在播放界面点击“章节”或者“Chapter”按键，系统卡顿无反应，crash。
+
 import sys
 import time
 
