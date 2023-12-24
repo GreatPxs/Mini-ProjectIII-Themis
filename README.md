@@ -1,6 +1,6 @@
 The link for Tasks-#2141 is https://github.com/tasks/tasks/issues/2141
 
-The link for AntennaPod-#6311 is https://github.com/AntennaPod/AntennaPod/issues/6311
+The link for AntennaPod-#6311 is https://github.com/AntennaPod/AntennaPod/issues/6120
 
 #2141号bug涉及到设置页面中语言的修改，python脚本难以完成，可能需要手动复现。步骤如下：
 1.创建一些任务，直至排序界面出现“My Order”或者“我的顺序”选项；
